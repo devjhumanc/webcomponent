@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Display Component - Demo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: #f5f5f5;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+    
+    .demo-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    
+    .instructions {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .instructions h2 {
+      margin-top: 0;
+      color: #667eea;
+    }
+    
+    .instructions code {
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+    }
+    
+    .instructions pre {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      border-left: 4px solid #667eea;
+    }
+    
+    .demo-section {
+      margin-bottom: 40px;
+    }
+    
+    .demo-section h3 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-container">
+    <h1>Input Display Web Component</h1>
+    <p class="subtitle">A simple web component that displays input text in real-time</p>
+    
+    <div class="instructions">
+      <h2>Usage Instructions</h2>
+      <p>To use this component from jsDelivr CDN, add the following to your HTML:</p>
+      
+      <h3>Option 1: From GitHub (Recommended)</h3>
+      <pre><code>&lt;!-- Load the component --&gt;
+&lt;script type="module" src="https://cdn.jsdelivr.net/gh/yourusername/yourrepo@main/input-display-component.js"&gt;&lt;/script&gt;
+
+&lt;!-- Use the component --&gt;
+&lt;input-display-component&gt;&lt;/input-display-component&gt;</code></pre>
+      
+      <h3>Option 2: From npm (if published)</h3>
+      <pre><code>&lt;!-- Load the component --&gt;
+&lt;script type="module" src="https://cdn.jsdelivr.net/npm/package-name@latest/input-display-component.js"&gt;&lt;/script&gt;
+
+&lt;!-- Use the component --&gt;
+&lt;input-display-component&gt;&lt;/input-display-component&gt;</code></pre>
+      
+      <h3>Optional Attributes</h3>
+      <pre><code>&lt;input-display-component 
+  placeholder="Custom placeholder text"
+  label="Custom Label"&gt;
+&lt;/input-display-component&gt;</code></pre>
+    </div>
+    
+    <div class="demo-section">
+      <h3>Demo 1: Default Component</h3>
+      <input-display-component></input-display-component>
+    </div>
+    
+    <div class="demo-section">
+      <h3>Demo 2: Custom Placeholder</h3>
+      <input-display-component placeholder="Enter your message here..."></input-display-component>
+    </div>
+    
+    <div class="demo-section">
+      <h3>Demo 3: Custom Label</h3>
+      <input-display-component label="Your Name"></input-display-component>
+    </div>
+  </div>
+  
+  <!-- Load the component -->
+  <script type="module" src="./input-display-component.js"></script>
+</body>
+</html>
+
