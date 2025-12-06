@@ -4,10 +4,16 @@
   "description": "A simple web component that takes user input and displays it in real-time",
   "main": "input-display-component.js",
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "files": [
     "input-display-component.js",
     "input-display-component.css",
-    "README.md"
+    "README.md",
+    "dist"
   ],
   "keywords": [
     "web-component",
@@ -21,11 +27,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/yourrepo.git"
+    "url": "https://github.com/devjhumanc/webcomponent.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/yourrepo/issues"
+    "url": "https://github.com/devjhumanc/webcomponent/issues"
   },
-  "homepage": "https://github.com/yourusername/yourrepo#readme"
+  "homepage": "https://github.com/devjhumanc/webcomponent#readme",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "date-fns": "^3.0.0"
+  }
 }
 
